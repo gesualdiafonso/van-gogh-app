@@ -1,0 +1,24 @@
+Parcial uno de Aplicaciones para Dispositivos Móviles
+Prof: Mabel García
+
+Alumnos: 
+------- Afonso Arruda Gesualdi
+------- Contreras Nairut
+
+
+
+Sobre la App: 
+
+Criamos una App sobre el Artista Vicent Van Gogh, Presentando um hero de comiezo con un navegador dinamico que envía el usuario a las demás vistas.
+
+La App en principio viene con un recordatorio sobre Movimentos artisticos de Van Gogh como tambíen viene con una pequeña biografía para que eu usuario que no cepas quien es lo puedas recordar.
+
+Criamos un estilo limpio sin sobrecargas de elementos dado que es una app donde lo unico que deve ser "artistico" es sobre Van Gogh.
+
+En sección que llegamos del formulario presentamos un carousel con funciones de Prev y Next para el usuario saber cuales son las obras presente adentro de nuestro quiz.
+
+Con relación al fomulario, criamos un fomulario con presencia de selects con options, usando las propiedades de vue con v-for, v-if y demás propiedades, criamos una rederización dinamica de formulario antes de preencherlo con una vista dinamica en misma sección de un component llamado resultados.
+
+El formulario trabaja sobre 2 funciones, la primera que es llamada que será el localStorage para que verifique si usuario ya la tiene su resultado o no, y luego la función principal que es calcularResultado, esta función va capturar todas las informaciónes por valores del formulario presentado por el usuario, la va guardar cada valor de las options y con base a un campo completo de respuestas según cada pregunta, vamos dar un mapeamento de los resultado para cada valor de los options, estes resultados por Id ubicado en respuestaMapId está la soma que hace la función para devolver el valor completo del resultado y decir al usuario cual de los seguintes cuadros siendo de 1 a 6 ubicado en un array-object llamado obrasQuest, devolviendo ao usuario su respuesta y deciendo cual la obra, mostrando la imagen el porque se identifica con está obra. 
+
+Luego de la función principal calcularResultado ser ejecutada, pasamos a la función de localStorage donde va guardar el valor del usuario y cuando cada vez que deseas, el usuario va ver su información ya salva.

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Links fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- links de CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Van Gogh | El retrato de tu alma.</title>
+
+    <!-- Links de metasearch -->
+
+</head>
+<body id="app">
+    <nav :class="['navbar container navbar-expand-lg navbar-light header-nav', { 'navbar-scrolled': isScrolled }]">
+        <div class="container-fluid">
+            <a href="/index.html">
+                <h1 class="logo animated slide-in-left delay-1 ">Van Gogh</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div :class="['collapse navbar-collapse', isScrolled ? 'navbar-dark' : 'navbar-light']" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto px-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#movimiento">Movimiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link active"href="#biografia">Biografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#formulario">Que obra soy?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <section class="container d-flex flex-column flex-lg-row">
+            <div class="mt-5 d-flex flex-column justify-content-center contenedor">
+                <div>
+                    <span class="subtitle animated slide-in-left delay-3">Sumérjase en los colores del alma de Vincent Van Gogh.</span>
+                </div>
+                <div>
+                    <h2 class="title animated slide-in-left delay-4">Qué Obra de Van Gogh representa tu esencia?</h2>
+                </div>
+                <div>
+                    <p class="subtitle-inform animated slide-in-left delay-5">Averigua con este test de arte qué cuadro de Van Gogh refleja tus emociones, tu forma de ver el mundo y la intensidad de tu alma creativa.</p>
+                    <a class="btn btn btn-outline-info text-center animated slide-in-left delay-6" href="#formulario">Descubra...</a>
+                </div>
+            </div>
+            <div class="img-position">
+                <img src="images/altoretrato_van_gogh.jpg" alt="">
+            </div>
+            <span class="moveleft animated fade-in-down delay-2">Vincent Van Gogh</span>
+            <span class="moveright animated fade-in-up delay-2">Vincent Van Gogh</span>
+        </section>
+        
+
+        <div class="linea-deco animated slide-in-right delay-1"></div>
+    </header>
+
+    <main class="container" id="main-content">
+
+
+    
+        <section class="section-to-animate" data-animate="fade-in-up" id="movimiento">
+
+            <div class="row justify-content-center mt-5 mb-1">
+
+                <h2 class="col-12 col-lg-6 title">Hagamos un viaje por los movimiento artísticos de Van Gogh</h2>
+                <p class="col-12 col-lg-6 inform-move">A lo largo de su breve pero intenso viaje, Vincent van Gogh no se limitó a pintar el mundo: lo sintió. Cada pincelada conlleva un estado de ánimo, cada color revela un fragmento de su mente en ebullición.Vamos a recorrer 3 fases cruciales de su carrera artística, representando sus transformaciones técnicas y emocionales que han convertido la actualidad en belleza.</p>
+                
+            </div>
+            <div class="decor-line w-75"></div>
+
+            
+
+                <div class="d-flex flex-row my-5 justify-content-center align-items-center gap-2">
+                    <div class="d-none d-xl-block">
+                        <svg width="274" height="327" viewBox="0 0 274 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="clip-shape">
+                                    <path d="M6.20201 138.204C-12.6872 86.3061 14.0715 28.9219 65.9693 10.0327L76.4939 6.20201C128.392 -12.6872 185.776 14.0715 204.665 65.9693L273.069 253.908L74.606 326.142L6.20201 138.204Z" />
+                                </clipPath>
+                            </defs>
+                        
+                            <!-- Aqui vai a imagem, cortada pelo path -->
+                            <image 
+                                href="images/retratos/barco_pasco.jpg" 
+                                width="274" 
+                                height="327" 
+                                clip-path="url(#clip-shape)" 
+                                preserveAspectRatio="xMidYMid slice"
+                            />
+                        
+                        </svg>
+                            
+                    </div>
+    
+                
+                    <div class="card-realismo d-flex flex-column justify-content-center gap-2 p-4 p-lg-5 mx-lg-5">
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+                            <div class="d-none d-lg-block deco-line"></div>
+                            <h3 class="text-center w-100">Realismo Emocional</h3>
+                            <div class="d-none d-lg-block deco-line"></div>
+                        </div>
+                        <span class="text-start">La raíz de un alma inquieta</span>
+                        <p>Al principio de su carrera, Van Gogh se dedicó a representar la vida tal como era: dura, cruda, sin filtros. Inspiradas por la vida campesina y los tonos terrosos de la realidad rural, sus obras de este periodo transmiten un fuerte sentido de empatía y respeto por la sencillez de la existencia. Los comedores de patatas es el ejemplo más simbólico, pues representa a una familia humilde en su rutina, con trazos densos y una paleta limitada pero poderosa.</p>
+                    </div>
+                    <div class="d-none d-xl-block">
+                        <svg width="273" height="327" viewBox="0 0 273 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="clip-rotate">
+                                    <path d="M68.4041 65.9693C87.2933 14.0715 144.678 -12.6872 196.575 6.20202L207.1 10.0327C258.998 28.9219 285.756 86.3061 266.867 138.204L198.463 326.142L4.18425e-05 253.908L68.4041 65.9693Z" fill="#C4C4C4"/>
+                                </clipPath>
+                            </defs>
+                            <image 
+                                href="images/retratos/rodano_noche.jpg" 
+                                width="274" 
+                                height="327" 
+                                clip-path="url(#clip-rotate)" 
+                                preserveAspectRatio="xMidYMid slice"
+                            />
+                        </svg>
+                            
+                    </div>
+                    
+                        
+                </div>
+
+
+            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5 my-5">
+                <div class="w-100">
+                    <div class="d-flex flex-row justify-content-center align-items-center">
+                        <div class="decor-line"></div>
+                        <h3 class="w-100 text-end title-dos">Impresionismo</h3>
+                    </div>
+                    <p>Al trasladarse a París, conoció la brillantez del arte moderno francés, como impresionismo de Monet y neoimpresionismo de Seurat, transformando su paleta de colores y enfoque emocional, explorando tonos vivos, pinceladas libres y composiciones de capacitación de sensaciones.</p>
+                    <p>Van Gogh, no solo pintaba lo que veía, sino lo que sentía, siendo momento en que su estética y espíritu se conectaban, con artes vibrantes y de conexión.</p>
+                </div>
+                <div class="w-100">
+                    <img class="img-fluid w-100" src="images/retratos/autorretrato.svg" alt="">
+                </div>
+                <div class="w-100">
+                    <div class="d-flex flex-row justify-content-center align-items-center">
+                        <h3 class="text-start w-100 title-dos">Expresionimso</h3>
+                        <div class="decor-line"></div>
+                    </div>
+                    <p>En Arlés y Saint-Rémy, Van Gogh se sumergió en su fase más icónica y más intensa. Cuadros como La Noche Estrellada (1888), Campo de trigo con cuervos  y La Habitación de Arlés, revelan la genialidad de sus composiciones, en el caos emocional que sebordaba su mente.</p>
+                    <p>Con colores expresivas al extremo, contornos cobrando la vida propia y un cielo que setía moverse en espiral, como si la naturaleza bailara al compás de sus pensamiento. Todo exceso era su expresión emocional.</p>
+                </div>
+            </div>
+            
+        </section>
+    
+
+        <section class="section-to-animate" data-animate="slide-in-left" id="biografia">
+
+            <div class="decor-line "></div>
+
+                <div class="container mt-4 mb-4">
+                    <div class="row align-items-center">
+            
+                        <div class="col-lg-7">
+                            <h2 class="text-lg-left title animated slide-in-left delay-4">¿Quién fue Vincent Van Gogh?</h2>
+                        </div>
+                        
+                        <div class="col-lg-5 d-none d-lg-flex align-items-center">
+                            <div class="decor-line w-100"></div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="decor-line "></div>     
+            
+            <div class="my-5">
+                <p>Vincent Van Gogh nació en 1853 en Holanda y pasó su vida en busca de sentido, entre pinceles, cartas y turbulentos paisajes interiores. Antes de convertirse en pintor, probó suerte como pastor, profesor y marchante de arte. Pero fue en el lienzo donde encontró su verdadero lenguaje.</p>
+                <p>En pocos años creó más de 2.000 obras, entre pinturas y dibujos, con un estilo único: colores vibrantes, pinceladas emotivas y un alma a flor de piel. Sus obras no se vendieron en vida, pero hoy resuenan como retratos vivos de una mente adelantada a su tiempo.</p>
+                <p>A pesar de enfrentarse a crisis mentales y al aislamiento, Van Gogh transformó el dolor en belleza. Murió prematuramente, a los 37 años, pero dejó un legado eterno. Este sitio web te invita a experimentar su arte de forma personal: ¿qué Van Gogh vive dentro de ti?, en este viaje, descubrirás cómo sus obras reflejan emociones universales y cómo su vida se entrelaza con su arte. Desde los campos de trigo hasta las noches estrelladas, cada pincelada cuenta una historia. Así que, ¿qué obra de Van Gogh eres? ¡Descúbrelo!</p>
+                
+        
+            </div>
+            
+        </section> 
+        
+        <div class="decor-line section-to-animate" data-animate="slide-in-left"></div> 
+
+        <section  class="mb-5 section-to-animate" data-animate="fade-in-up">  
+            <div class="position-relative mt-5">
+                <!-- Botão Esquerda -->
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    @click="scrollPrev"
+                >
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <!-- Scroll Container -->
+                <div
+                    id="customCarousel"
+                    class="d-flex overflow-auto gap-5"
+                >
+                    <div
+                        class="flex-shrink-0  text-center  position-relative"
+                        v-for="artes in obrasQuest"
+                        :key="artes.id"
+                        style="scroll-snap-align: start;"
+                    >
+                        <img
+                        :src="artes.image"
+                        class="d-block mx-auto"
+                        width="300"
+                        height="400"
+                        :alt="`${artes.name}, ${artes.portada}`"
+                        />
+                        <div class="w-100 p-1 position-absolute bottom-0 bg-white">
+                            <h5 class="mb-0 fw-semibold">{{ artes.name }}</h5>
+                            <span class="text-muted">{{ artes.portada }}</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botão Direita -->
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    @click="scrollNext"
+                >
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>              
+        </section>
+
+        <div class="decor-line mt-5 w-50 section-to-animate" data-animate="slide-in-left"></div>   
+
+        <section class="my-5 section-to-animate" data-animate="slide-in-right" id="formulario">
+
+            <div class="mb-5 mt-2">
+                <h2 class="text-start title w-50"> {{ title }}</h2>
+            </div>
+
+            <formulario-component
+                :preguntas="preguntas"
+                :opciones="opciones"
+                :campos="campos"
+                :respuestas="respuestas"
+                :resultado="resultado"
+                @calcular="calcularResultado"
+                @reset="resetForm"
+            ></formulario-component>
+            
+        </section>
+        
+    </main>    
+    
+    <footer class=" container-fluid bg bg-dark mt-5 py-5" >
+
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <h2 class="logo animated slide-in-left delay-1 ">Vincent Van Gogh</h2>
+                    <div class="decor-line-dos animated slide-in-right delay-2 w-25"></div> 
+                </div>
+
+                <div class="col-2 text-align-end">
+                    <ul class="list-unstyled text-light ">
+                        <li>Trabajo: Primer Parcial</li>
+                        <li>Aplicaciones para Dispositivos Móviles</li>
+                        <li>Prof: Mabel García</li>
+                        <li>Comisión: DWN3AV</li>
+                    </ul>
+    
+                </div>
+            </div>
+
+
+            <div class="decor-line-dos animated slide-in-right delay-2"></div> 
+            <div class="my-4 text-light">
+                <h3 class="d-none">Integrantes</h3>
+                <div>
+                    <ul class="d-flex flex-row justify-content-center align-items-center list-unstyled">
+                        
+                        <div class="text-center">
+                            <li><img class="img-fluid w-75" src="images/integrantes/foto_de_afon.jpg" alt="foto de Afonso"/></li>
+                        </div>
+
+                        <div class="w-25">
+                            <li>Afonso Arruda Gesualdi</li>
+                            <li>gesualdiafonsoarr@gmail.com</li>
+                        </div>
+                    
+                        
+                        <div class="w-25 text-end">
+                            <li>Nairut Contreras</li>
+                            <li>nairutc@gmail.com</li>
+                        </div>
+                        <div class="text-center">
+                            <li><img class="img-fluid w-75" src="images/integrantes/foto_de_nai.jpg" alt="foto de nai"/></li>
+                        </div>
+                    
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="container_fluid decor-line-dos animated slide-in-right delay-2 "></div>  
+
+        <p class="text-center my-4 fs-6 text-light">© Van Gogh 2025 | Todos los derechos reservado a los autores</p>
+
+
+    </footer>
+
+    <script src="scripts/vue3.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</body>
+</html>
